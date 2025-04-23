@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite failures="1" errors="0" skipped="1" tests="2" time="0.043390" name="Sell Products From Inventory">
+<testcase classname="Sell Products From Inventory" name="Successfully remove products sold from inventory" time="0.042970">
+  <failure message="failed Successfully remove products sold from inventory" type="failed">
+    <![CDATA[Scenario: Successfully remove products sold from inventory
+
+Then 100 widgets should be removed from inventory
+
+Message:
+]]>
+    <![CDATA[
+expected: 500
+     got: 100
+
+(compared using ==)
+ (RSpec::Expectations::ExpectationNotMetError)
+./features/step_definitions/sell_inventory_steps.rb:62:in `/^((?:\d+)) widgets should be removed from inventory$/'
+features/sell_inventory.feature:9:in `Then 100 widgets should be removed from inventory']]>
+  </failure>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+<testcase classname="Sell Products From Inventory" name="Successfully add products to inventory" time="0.000420">
+  <skipped/>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+</testsuite>
