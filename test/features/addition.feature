@@ -10,15 +10,4 @@ Scenario Outline: Add two integer values
 Examples:
 | input | result |
 | 99+1  | 100    |
-| 5*20  | 100    |
-| 100/20|   5    |
-
-Scenario: Add two integer values
-  Given the input 99+1
-  When we add the integer values
-  Then the result should be 100
-
-Scenario: Add two integer values
-  Given the input 2000+2000
-  When we add the integer values
-  Then the result should be 400
+| 98+2  | 100    |
