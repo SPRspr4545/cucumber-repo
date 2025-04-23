@@ -1,0 +1,22 @@
+Given(/^a user (\w+) has authenticated with the correct credentials$/) do |user|
+  steps %{
+    And #{user} has navigated to the login screen
+    And #{user} enters the correct username
+    And #{user} enters the correct password
+    }
+    @username = user
+    @message = "Login Successful"
+end
+
+When(/^(\w+) clicks the (\w+) button$/) do |user, action|
+  # placeholder for some other action here
+  @action = action
+end
+
+Then(/^personal data associated with (\w+) should be displayed$/) do |authenticated_user|
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+And(/^the user (\w+) should see the message "([^"]*)"$/) do |user,message|
+  expect(Amessage).to eq message
+end

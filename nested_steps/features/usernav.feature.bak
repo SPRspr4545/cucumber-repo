@@ -1,0 +1,10 @@
+Feature: Website navigation and authentication
+
+  Scenario: Successfully display personal user data for an authenticated user
+    
+    Given a user Joe has navigated to the login screen
+    And Joe enters the correct username
+    And Joe enters the correct password
+    When Joe clicks the login button
+    Then personal data associated with Joe should be displayed
+    And the user Joe should see the message "Login Successful"
