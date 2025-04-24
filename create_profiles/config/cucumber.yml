@@ -1,0 +1,20 @@
+# config/cucumber.yml
+##YAML Template
+---
+## using profiles and default profile
+# default: -p html_report -p test1001  
+# html_report: -f progress -f html -o features_report.html  
+# test1001: -t @test1001
+
+## preprocessing with ERb
+# <% common = "-t ~@test1002 -S" %>
+# default: <%= common %> features  
+# html_report: <%= common %> -f html -o features_report.html features
+
+## using environment variables
+## chrome profile executes the browser features in chrome browser
+default: -p html_report -p test1001
+html_report: -f progress -f html -o features_report.html
+test1001: -t @test1001
+chrome: BROWSER=Chrome
+
